@@ -1,0 +1,26 @@
+body {
+  background: #800000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+}
+
+.coluna {
+  border: 1px solid rgb(28, 2, 36);
+  padding: 10px; 
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 70vh; 
+}
+
+.elemento-centralizado {
+ 
+  margin: 0 auto; 
+}
