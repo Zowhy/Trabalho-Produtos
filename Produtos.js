@@ -1,11 +1,11 @@
-//1
+
 class MeuErro extends Error {
   constructor(message){
     super(message);
     this.name = "Erro!";
   }
 }
-//2
+
 
  class Produto {
   constructor (nome, datadeCadastro, descricao, preco){
@@ -20,7 +20,7 @@ mostrarProdutos (){
 }
 
 
-//3
+
 
 class ProdutosDestaque extends Produto{
   constructor (nome, datadeCadastro, descricao,  preco, imagemDestaque){
@@ -39,7 +39,7 @@ class ProdutosDestaque extends Produto{
   atributos() {
     if (this.nome != "" && this.datadeCadastro != "" && this.descricao != "" && this.preco != "" && this.imagemDestaque != ""){ 
       return  `
-      <h1 class = "bela" >${this.nome}</h1>
+      <h1 class = "Daniel" >${this.nome}</h1>
       <h4> ${this.datadeCadastro}</h4>
       <img src="${this.imagemDestaque}" style="height: 250px"/>
       <p> ${this.descricao}</p>
@@ -56,14 +56,14 @@ class ProdutosDestaque extends Produto{
 }   
 
 
-//4
+
 const produtosDestaque = new ProdutosDestaque("Playboi Carti", "16-04-2020", "Disco de Vinil, album: Whole Lotta Red", "R$156.24", "https://i.pinimg.com/564x/33/7e/37/337e3761542dace2a87e810872d56f89.jpg");
 
 const atributos1 = produtosDestaque.mostrarAtributos() 
 
 const produtos = document.getElementById("produto-destaque")
 produtos.insertAdjacentHTML('afterbegin', produtosDestaque.mostrarAtributos());
-//5
+
 
 
 
@@ -125,7 +125,7 @@ class ProdutosdaLista extends Produto{
 
 
 
-//6
+
 
 
 
